@@ -41,28 +41,8 @@ for i in range(5):
     studentList[i].mymathMark()
     print(studentList[i].totalMarks())
 
-
-
-
 for i in range(5):
     print(studentList[i].name, studentList[i].totalMarks())
 
 
 print("Program ended")
-
-
-
-
-
-
-
-# with open("numbers.txt", encoding = 'utf-8') as f:
-#     data = f.read()
-#     myData = data.split("\t")
-
-# Masud = student(myData[0],myData[1],myData[2],myData[3])
-# Masud.myName()
-# Masud.mybengaliMark()
-# Masud.myenglishMark()
-# Masud.mymathMark()
-# print(Masud.totalMarks())
