@@ -12,37 +12,36 @@ class student:
         self.englishMark = englishMark
         self.mathMark = mathmark
 
-    def myName(self):
+    def GetmyName(self):
         print("Hello my name is " + self.name)
 
-    def mybengaliMark(self):
+    def GetmybengaliMark(self):
         print("Hello my bengaliMark is ",  self.bengaliMark)
 
-    def myenglishMark(self):
+    def GetmyEnglishMark(self):
         print("Hello my englishMark is ",  self.englishMark)
 
-    def mymathMark(self):
+    def GetmymathMark(self):
         print("Hello my mathMark is ",  self.mathMark)
 
-    def totalMarks(self):
-        BANGLAmark = float(self.bengaliMark)
-        ENGLISHmark = float(self.englishMark)
-        MATHmark = float(self.mathMark)
-        total = BANGLAmark+ENGLISHmark+MATHmark
-        return total
+    def calculateTotalMarks(self):
+        return self.bengaliMark+self.englishMark+self.mathMark
 
 studentList = []
 
 for i in range(5):
     studentList.append( student(df.Name[i],df.markBangla[i],df.markEnglish[i],df.markMath[i]))
-    studentList[i].myName()
-    studentList[i].mybengaliMark()
-    studentList[i].myenglishMark()
-    studentList[i].mymathMark()
-    print(studentList[i].totalMarks())
+    studentList[i].GetmyName()
+    studentList[i].GetmybengaliMark()
+    studentList[i].GetmyEnglishMark()
+    studentList[i].GetmymathMark()
+    print(studentList[i].calculateTotalMarks())
+
+
+
 
 for i in range(5):
-    print(studentList[i].name, studentList[i].totalMarks())
+    print(studentList[i].name, studentList[i].calculateTotalMarks())
 
 
 print("Program ended")
