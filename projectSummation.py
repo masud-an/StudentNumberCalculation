@@ -1,5 +1,3 @@
-import string
-from unicodedata import name
 import pandas as pd
 
 df = pd.read_csv('number1.csv')
